@@ -1,0 +1,25 @@
+.welcome {
+  margin: 20px 0;
+  padding: 0 20px;
+  .hello {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.demo-text {
+  &-1,
+  &-2,
+  &-3 {
+    height: 150PX;
+  }
+
+  &-1 {
+    background-color: #00c18b;
+  }
+  &-2 {
+    background-color: cyan;
+  }
+  &-3 {
+    background-color: #fb7103;
+  }
+}

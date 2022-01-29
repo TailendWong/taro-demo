@@ -1,0 +1,14 @@
+.mine {
+    .header {
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00c18b;
+        .name {
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}

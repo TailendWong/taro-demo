@@ -1,0 +1,28 @@
+.info {
+    padding: 20px;
+}
+.form-picker {
+    .at-list__item{
+        padding-left: 0;
+        margin-left: 32px;
+        .item-extra__info {
+            padding-right: 0;
+            color: #ccc;
+        }
+        &.selected .item-extra__info {
+            color: inherit
+        }
+    }
+    
+}
+.form-actions {
+    margin-top: 20px;
+    .at-button + .at-button {
+        margin-top: 20px;
+    }
+}
+.at-form {
+    .at-input {
+        text-align: right;
+    }
+}
