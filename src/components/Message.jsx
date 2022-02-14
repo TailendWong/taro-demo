@@ -1,25 +1,13 @@
-import Taro from '@tarojs/taro'
+import { alert } from '../util/Tools'
 const Message = {
-    success: function() {
-        Taro.hideToast()
-        Taro.showToast({
-            title: '成功',
-            icon: 'success',
-            duration: 2000
-        })
+    success: function(msg,cb) {
+        alert(msg,'',cb)
     },
-    loading: function() {
-        Taro.hideToast()
-        Taro.showLoading()
+    info: function(msg,cb) {
+        alert(msg,'',cb)
     },
-    error: function() {
-        Taro.hideToast()
-        Taro.showToast({
-            title: '失败',
-            icon: 'error',
-            // image: '',
-            duration: 2000
-        })
+    error: function(msg,cb) {
+        alert(msg,'',cb)
     },
 }
 export default Message

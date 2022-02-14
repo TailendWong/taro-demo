@@ -1,9 +1,4 @@
-.at-form .at-input {
-    text-align: right;
-}
-.main-layout .footer {
-    margin-top: 304px;
-}
+/* 自定义FloatLayout样式 */
 .at-float-layout .layout-header {
     background-color: #fff;
 }
