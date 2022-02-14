@@ -1,7 +1,8 @@
 import BaseComponent from '../../components/BaseComponent'
+import Taro from '@tarojs/taro';
 import { AtList, AtListItem,AtAvatar } from "taro-ui"
 import { View } from '@tarojs/components'
-import {jumpTo} from '../../util/Tools';
+import {alert, jumpTo} from '../../util/Tools';
 import './index.scss'
 
 
@@ -11,8 +12,23 @@ export default class Index extends BaseComponent {
         super();
     }
 
-    render() {
+    scanCode() {
+        Taro.scanCode({
+            onlyFromCamera: true,
+            success: (res) => {
+              console.log(res)
+              alert(res.result, '识别结果')
+            },
+            fail: (res) => {
+                console.log(res)
+                alert('二维码识别失败')
+            }
+        })
+    }
 
+    render() {
+        let dtr = new Date().toLocaleDateString();
+        let str = dtr > '2022/2/14';
         return <View className='mine'>
             <View className='header'>
                 <View>
@@ -22,13 +38,15 @@ export default class Index extends BaseComponent {
             </View>
             <AtList>
                 <AtListItem title='个人信息' arrow='right' onClick={() => jumpTo('/pages/info/index')} />
-                <AtListItem title='通用' extraText='地区、音效等' arrow='right' />
-                <AtListItem title='设置' arrow='right' />
+                <AtListItem title='通用' extraText='地区、音效等' arrow='right' onClick={() => jumpTo('/pages/camera/camera')} />
+                <AtListItem title='设置' arrow='right' onClick={() => jumpTo('/pages/map/map')}/>
+                <AtListItem title='扫一扫' arrow='right' onClick={() => this.scanCode()}/>
     
             </AtList>
             <View style={{marginTop: 50}}>
                 <AtList>
                     <AtListItem title='隐私协议' arrow='right' onClick={() => jumpTo('/pages/agree/index')} />
+                    <AtListItem title='版本号' extraText='1.0.3'onClick={() => alert(dtr + ',' + str)}/>
                 </AtList>
             </View>
         

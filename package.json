@@ -47,7 +47,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "taro-storage": "^1.0.4",
-    "taro-ui": "^3.0.0-alpha.3"
+    "taro-ui": "^3.1.0-beta.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

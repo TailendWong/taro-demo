@@ -32,7 +32,7 @@ export default class Index extends BaseComponent {
     render() {
       const { current, isAutoplay, duration, isCircular, interval, hasIndicatorDots, verticalIsCircular, verticalHasIndicatorDots, verticalIsAutoplay } = this.state
         return <View>
-            <AtToast isOpened={this.state.open} text="开发中"></AtToast>
+            <AtToast isOpened={this.state.open} text="敬请期待..."></AtToast>
             <Swiper
                 slideMult='10'
                 indicatorColor='#999'
@@ -62,24 +62,24 @@ export default class Index extends BaseComponent {
             [
                {
                  image: 'http://test.fs.rchvip.cn:80/group1/M00/00/5F/rBEEDl4FzcCAZQlzAAADb39X560062.png',
-                 value: '通知'
+                 value: '推荐'
                },
                {
                  image: 'http://test.fs.rchvip.cn:80/group1/M00/00/70/rBEEDl8O1seAMyOaAAACo74YwZk611.png',
                  value: '教师团'
                },
-               {
-                 image: 'http://test.fs.rchvip.cn:80/group1/M00/00/70/rBEEDl8OWw-AA-yCAAADm-neipc849.png',
-                 value: '直播课'
-               },
+              //  {
+              //    image: 'http://test.fs.rchvip.cn:80/group1/M00/00/70/rBEEDl8OWw-AA-yCAAADm-neipc849.png',
+              //    value: '直播课'
+              //  },
                {
                  image: 'http://test.fs.rchvip.cn:80/group1/M00/00/70/rBEEDl8OWzyASIUIAAADr5zWR-E357.png',
-                 value: '统计'
+                 value: '通知'
                },
-               {
-                 image: 'http://test.fs.rchvip.cn:80/group1/M00/00/5F/rBEEDl4FzjSAdT6YAAADKBlsT5U935.png',
-                 value: '讨论组'
-               },
+              //  {
+              //    image: 'http://test.fs.rchvip.cn:80/group1/M00/00/5F/rBEEDl4FzjSAdT6YAAADKBlsT5U935.png',
+              //    value: '广场'
+              //  },
                {
                  image: 'http://test.fs.rchvip.cn:80/group1/M00/00/70/rBEEDl8OWmeAexlKAAADKfcuDbY891.png',
                  value: '个人信息',

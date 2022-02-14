@@ -6,6 +6,8 @@ export default {
     'pages/knowledge/index',
     'pages/mine/index',
     'pages/agree/index',
+    'pages/camera/camera',
+    'pages/map/map',
     'pages/info/index'
   ],
   window: {
@@ -20,7 +22,7 @@ export default {
     list: [
       {
         pagePath: 'pages/start/index',
-        text: '工作台',
+        text: '首页',
         iconPath: 'asset/component/view.png',
         selectedIconPath: 'asset/component/view_red.png'
       },

@@ -1,0 +1,18 @@
+.at-form .at-input {
+    text-align: right;
+}
+.main-layout .footer {
+    margin-top: 304px;
+}
+.at-float-layout .layout-header {
+    background-color: #fff;
+}
+.at-float-layout__container,.at-float-layout .layout-header {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+}
+.at-float-layout .layout-header__title {
+    font-weight: 700;
+    text-align: center;
+    padding-left: 80px;
+}

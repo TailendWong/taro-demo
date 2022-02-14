@@ -13,7 +13,23 @@ function httpGet(url) {
     })
 }
 
+function alert(msg, title, cb) {
+    Taro.showModal({
+        title: title || '',
+        showCancel: false,
+        content: msg || '',
+        success: function (res) {
+            if (res.confirm) {
+                cb && cb()
+            } else if (res.cancel) {
+              
+            }
+        }
+    })
+}
+
 export {
+    alert,
     jumpTo,
     httpGet
 }
