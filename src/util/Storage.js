@@ -21,4 +21,5 @@ storage.removeLocalStorage(key)
 ###移除本地所有的过期的缓存
 storage.removeAllLocalExp()
 */
+
 export default storage

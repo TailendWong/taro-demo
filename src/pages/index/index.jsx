@@ -3,7 +3,7 @@ import { View, Text, Input, Checkbox, Label } from '@tarojs/components'
 import { AtButton } from 'taro-ui'
 import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.css'
-import { jumpTo } from '../../util/Tools'
+import Tools from '../../util/Tools'
 
 export default class Index extends Component {
 
@@ -47,7 +47,7 @@ export default class Index extends Component {
                 </Label>
           </View>)}   
         </View>
-        <AtButton type='primary' onClick={() => jumpTo('/pages/grid/index')}>跳转</AtButton>
+        <AtButton type='primary' onClick={() => Tools.jumpTo('/pages/grid/index')}>跳转</AtButton>
       </View>
 
     )

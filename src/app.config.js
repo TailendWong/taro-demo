@@ -8,6 +8,7 @@ export default {
     'pages/agree/index',
     'pages/camera/camera',
     'pages/map/map',
+    'pages/login/index',
     'pages/info/index'
   ],
   window: {
